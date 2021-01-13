@@ -1,0 +1,66 @@
+body {
+margin: 0;
+}
+.navbar-container {
+    height: 5vh;
+    width: 100vw;
+    background-color: #5A9449;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoImg {
+    height: auto;
+    width: 30vw;
+    left:0;
+}
+.navbar-container a {
+    text-decoration: none;
+}
+.navbar-title {
+    font-size: 12px;
+    margin-right: 5vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about {
+    font-size: 12px;
+    margin-right: 5vw;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:1025px) {
+    .logoImg {
+        height: auto;
+        width: 20vw;
+        left:0;
+    }
+    .navbar-title {
+        font-size: 24px;
+        margin-right: 5vw;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .about {
+        font-size: 24px;
+        margin-right: 5vw;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
+@media screen and (min-width:768px) {
+    .navbar-title {
+        font-size: 22px;
+        margin-right: 5vw;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    .about {
+        font-size: 22px;
+        margin-right: 5vw;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
