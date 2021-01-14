@@ -1,8 +1,8 @@
 .footer-container {
-    z-index: 15;
+  
     top:0;
     left:0;
-    position:fixed;
+    position: fixed;
     background-color: #5A9449;
     height: 5vh;
     width: 100vw;
@@ -11,23 +11,25 @@
     align-items: center;
     margin-bottom: 5vh;
 }
+
 .footer-logo {
     height: 5vh;
     width: auto;
 }
 
 @media screen and (min-width:1024px) {
+    
     .footer-container {
-        top:auto;
+     
         bottom:0;
         left:0;
-        position:fixed;
+        position: fixed;
         background-color: #5A9449;
         height: 5vh;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100vh;
+      
     }
 }
