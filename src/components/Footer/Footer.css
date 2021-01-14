@@ -20,8 +20,10 @@
 @media screen and (min-width:1024px) {
     
     .footer-container {
-     
+        
         bottom:0;
+        margin-bottom: 0px;
+        top: unset;
         left:0;
         position: fixed;
         background-color: #5A9449;
@@ -30,6 +32,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20vh;
       
     }
 }
