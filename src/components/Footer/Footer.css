@@ -1,4 +1,6 @@
 .footer-container {
+
+    position: relative;
   
     top:0;
     left:0;
@@ -9,11 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vh;
 }
 
 .footer-logo {
     height: 5vh;
+    max-height: 40px;
     width: auto;
 }
 
@@ -22,7 +24,6 @@
     .footer-container {
         
         bottom:0;
-        margin-bottom: 0px;
         top: unset;
         left:0;
         position: fixed;
@@ -32,7 +33,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20vh;
-      
     }
 }
