@@ -45,12 +45,12 @@ margin: 0;
         position: fixed;
         top: 0;
         left: 0;
-        bottom:auto;
-        overflow: hidden;
+       
+      
     }
     .logoImg {
-        height: auto;
-        width: 20vw;
+        height: 5bh;
+        width: auto;
         left:0;
     }
     .navbar-title {

@@ -1,3 +1,6 @@
 .search-bar {
-  
+  height: 10vh;
+  width: auto;
+  position: relative;
+  margin-bottom: 10vh;
 }

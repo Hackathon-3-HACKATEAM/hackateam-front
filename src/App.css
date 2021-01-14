@@ -3,3 +3,12 @@
   margin-top: 7.5vh;
   height:80vh;
 }
+
+@media screen and (min-width:1024px) {
+  .map {
+    border: 2px solid green;
+    margin-top: 10vh;
+    height:80vh;
+  
+  }
+}
