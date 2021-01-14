@@ -8,18 +8,22 @@ margin: 0;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .logoImg {
-    height: auto;
-    width: 30vw;
-    left:0;
+    height: 4vh;
+    width: auto;
+    margin-left: 4vw;
+    margin-top: 0.5vh;
 }
 .navbar-container a {
     text-decoration: none;
 }
 .navbar-title {
-    font-size: 12px;
-    margin-right: 5vw;
+    margin-left: 4vw;
+    font-size: 14px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +34,20 @@ margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
+    .navbar-container {
+        height: 5vh;
+        width: 100vw;
+        background-color: #5A9449;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom:auto;
+        overflow: hidden;
+    }
     .logoImg {
         height: auto;
         width: 20vw;

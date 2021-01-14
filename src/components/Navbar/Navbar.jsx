@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import Logo from '../Navbar/NavbarAssets/logo.svg'
+import Logo from '../Navbar/NavbarAssets/logo.png'
 import {
    
     Link
