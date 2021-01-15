@@ -5,21 +5,14 @@ import './Search.css'
 // Empty => 0 elements
 // Max => 5
 
-export default function Search() {
+export default function Search(props) {
     const [cities, setCities] = useState([]);
     const [filteredCities, setFilteredCities] = useState([]);
     const [search, setSearch] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
 
-    // Equivalent (plus ou moins) du code dans le UseEffect Axios.
-    /* const getData = async () => {
-      const res = await axios.get('http://localhost:8000/api/cities');
-      if (res && res.data) {
-        const data = res.data;
-        setCities(data);
-      }
-    } */
+
 
     useEffect(() => {
       axios
@@ -94,7 +87,10 @@ export default function Search() {
                 filteredCities.map((city) => {
                   return (
                     <div className="search-results" key={city.id}> 
-                          <p className="results" > {city.city} </p>
+                          <p className="results" onClick={()=>(props.setZipCode(city.zipcode),
+                          props.setCityStart(city.city),
+                            props.setLongMap(city.lat),props.setLatMap(city.long),
+                            setSearch(""))}> {city.city} ( {city.zipcode} ) </p>
                     </div>
                   )
                 })
