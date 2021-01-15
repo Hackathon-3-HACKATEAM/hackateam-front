@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer">
         <div className="footer-container">
 
-          <img className="footer-logo"src={Logo}/>
+        <a target="_blank" href= "https://comparateuragricole.com/"> <img className="footer-logo"src={Logo}/> </a>
         </div>
       </div>
     );

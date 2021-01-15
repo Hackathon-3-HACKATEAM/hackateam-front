@@ -1,0 +1,48 @@
+.stats-container {
+  margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    background-color: #5A9449;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    
+}
+.data-farmers {
+    color: black;
+    padding-left: 10px;
+}
+.total-farmers {
+    color: white;
+ 
+}
+.total-farmers img {
+    height: 25px;
+    padding-right: 10px;
+ 
+}
+.total-transactions {
+    color: white ;
+
+}
+.total-transactions  img {
+   height: 25px;
+   padding-right: 10px;
+
+}
+@media screen and (min-width: 768px) {
+    .stats-container {
+        margin-top: 3vh;
+        margin-left: 30vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 40vw;
+          background-color: #5A9449;
+          margin-bottom: 5vh;
+          border-radius: 10px;
+          
+      }
+}
+
