@@ -2,6 +2,7 @@ body {
 margin: 0;
 }
 .navbar-container {
+    z-index: 200;
     height: 5vh;
     width: 100%;
     background-color: #5A9449;

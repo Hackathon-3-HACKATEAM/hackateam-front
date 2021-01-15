@@ -15,26 +15,20 @@ import Mappy from './components/Map/Map';
 
 const App = () => {
   return(
+   
     <div className="App">
-      <Router>
+       <Router>
         <Navbar />
-
-        <div className='App-content'>
-
-          <Route path="/">
-            <Mappy />
-          </Route>
-
-          <Route path = "/about">
-            <About />
-          </Route>
-
-        </div>
-
+         <div className='App-content'>
+          <Switch>
+           <Route exact path="/" component={Mappy}/>
+           <Route path = "/about" component={About}/>
+          </Switch>
+         </div>
+        <Footer />
       </Router>
-
-      <Footer />
     </div>
+    
   );
 }
 
