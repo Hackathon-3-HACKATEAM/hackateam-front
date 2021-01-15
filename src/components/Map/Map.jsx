@@ -5,6 +5,8 @@ import leafGreen from '../../assets/leaf-green.png';
 import leafRed from '../../assets/leaf-red.png';
 import leafOrange from '../../assets/leaf-orange.png';
 import leafShadow from '../../assets/leaf-shadow.png';
+import farmer from '../../assets/farmer.png'
+import siege from '../../assets/enterprise.png'
 import './Map.css';
 import Search from '../../components/SearchBar/Search';
 import {FETCH} from '../../Fetch';
@@ -17,7 +19,7 @@ import axios from 'axios';
     const [orangeIcon, setOrangeIcon] = useState({ lat: 35.772790, lng: -78.652305 });*/
     const [resData, setResData] = useState([]);
     const [farmers, setFarmers] = useState([]);
-    const [zoom, setZoom] = useState(15);
+    const [zoom, setZoom] = useState(12);
     const [isLoading, setIsLoading] = useState(false);
     const [cityStart,setCityStart]=useState("");
     const [zipCode,setZipCode]=useState(28000);
@@ -26,25 +28,30 @@ import axios from 'axios';
     //const positionRedIcon = [redIcon.lat, redIcon.lng];
     //const positionGreenIcon = [35.774416, -78.633271];
     //const positionOrangeIcon = [orangeIcon.lat, orangeIcon.lng];
-    const posInitial = [48.45,1.5];
+    const posInitial = [48.4485647, 1.5359632];
 
-    const greenIcone= L.icon({
-      iconUrl: leafGreen,
+
+
+
+    const siegeIcon= L.icon({
+      iconUrl: siege,
       shadowUrl: leafShadow,
-      iconSize:     [38, 95], // size of the icon
+      iconSize:     [80, 120], // size of the icon
       shadowSize:   [50, 64], // size of the shadow
       iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
       shadowAnchor: [4, 62],  // the same for the shadow
-      popupAnchor:  [-3, -76]
+      popupAnchor:  [5, -76]
     });
-    const orangeIcone= L.icon({
-      iconUrl: leafOrange,
+
+
+    const farmerIcon= L.icon({
+      iconUrl: farmer,
       shadowUrl: leafShadow,
-      iconSize:     [38, 95], // size of the icon
+      iconSize:     [60, 95], // size of the icon
       shadowSize:   [50, 64], // size of the shadow
       iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
       shadowAnchor: [4, 62],  // the same for the shadow
-      popupAnchor:  [-3, -76]
+      popupAnchor:  [5, -76]
     });
     useEffect(() => {
       axios
@@ -96,14 +103,15 @@ import axios from 'axios';
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker key="posUtilisateur" position={posInitial} icon={orangeIcone}>
+            <Marker className="siege" key="posUtilisateur" position={posInitial} icon={siegeIcon}>
               <Popup>
-              <p>Vous êtes ici !</p>
+              <p>Siège de Comparateur Agricole.com</p>
               </Popup>
             </Marker>
-            {!isLoading && (farmers.map(farmer => (<Marker key={farmer.index} position={[farmer.lat,farmer.long]} icon={greenIcone}>
+            {!isLoading && (farmers.map(farmer => (<Marker key={farmer.index} position={[farmer.lat,farmer.long]} icon={farmerIcon}>
               <Popup>
-              <p>Je m'appelle n°{farmer.id}</p>
+              <p className="i-am">J'ai un terrain de {farmer.id} ha </p>
+              <p className="i-am">Agriculteur partenaire de la plateforme</p>
               </Popup>
             </Marker>)))}
           </Map>
