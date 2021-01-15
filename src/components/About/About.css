@@ -1,0 +1,107 @@
+.about-container {
+    padding-bottom: 5vh;
+}
+.champ-ble {
+    width: 100vw;
+    height: 80%;
+}
+.about-title {
+    font-size: 20px;
+    text-align: center;
+    color:  #5A9449;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.about-title2 {
+    font-size: 18px;
+    text-align: center;
+    color:  #5A9449;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+
+}
+.about-text {
+   width: 80%;
+   padding: 5px;
+   margin-left: 10vw;
+   border-radius: 8px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   text-align: center;
+   padding: 5px;
+   color: white;
+    background-color:  #5A9449;
+
+}
+@media screen and (min-width: 1024px) {
+    .about-content {
+        opacity: 0.85;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        top: 100vh;
+        position: relative;
+        z-index: 30;
+        justify-content: center;
+        align-items: center;
+       
+        
+       
+    }
+    .about-container {
+       
+        height: 205vh;
+    }
+    .champ-ble {
+        top: 5vh;
+        position:fixed;
+        width: 100vw;
+        height: 100vh;
+    }
+    .about-title {
+    
+        text-shadow: black 1px 1px 2px;
+        z-index: 20;
+        font-size: 60px;
+        left: 2vw;
+        top:30vh;
+        position: fixed;
+        color:  white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        
+      
+    }
+    
+    .about-title2 {
+        height: 15vh;
+        position: relative;
+        font-size: 36px;
+        text-align: center;
+        z-index: 30;
+        background-color: white;
+        color:  #5A9449;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        margin-bottom: -5vh;
+    
+    }
+    .about-text {
+        line-height: 4vh;
+        z-index: 30;
+        position: relative;
+       width: 50vw;
+       padding: 5px;
+      margin-left: 0;
+       border-radius: 8px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 24px;
+       text-align: center;
+       padding: 5px;
+       color: white;
+        background-color:  #5A9449;
+    
+    }
+}
