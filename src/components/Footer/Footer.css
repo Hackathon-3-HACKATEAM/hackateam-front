@@ -22,7 +22,7 @@
 @media screen and (min-width:1024px) {
     
     .footer-container {
-        
+        z-index: 40;
         bottom:0;
         top: unset;
         left:0;
