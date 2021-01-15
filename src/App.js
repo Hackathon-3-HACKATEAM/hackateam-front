@@ -11,6 +11,7 @@ import About from './components/About/About'
 import Footer from './components/Footer/Footer'
 import Search from './components/SearchBar/Search';
 import Mappy from './components/Map/Map';
+import FarmersStats from './components/Stats/FarmersStats'
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
            <Route path = "/about" component={About}/>
           </Switch>
          </div>
+       
         <Footer />
       </Router>
     </div>
